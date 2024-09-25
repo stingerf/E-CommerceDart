@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
-                    Navigator.pop(context, '/register');
+                    Navigator.pushNamed(context, '/register');
                   },
                   child: Text(
                     'Belum punya akun? Register',
@@ -73,7 +73,7 @@ class LoginPage extends StatelessWidget {
   Widget _buildLoginButton(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.pushNamed(context, '/register');
+        Navigator.pop(context, '/');
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.orange,

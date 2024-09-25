@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skl_e_commerse/pages/homepage.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -75,7 +76,7 @@ class RegisterPage extends StatelessWidget {
   Widget _buildRegisterButton(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.pop(context, '/homepage');
+        Navigator.pushNamed(context, '/');
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.pink,

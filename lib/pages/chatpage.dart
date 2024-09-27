@@ -53,8 +53,14 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Message"),
+        title: const Text(
+          "Message",
+          style: TextStyle(
+            color: Colors.white
+          ),
+        ),
         centerTitle: true,
+        backgroundColor: Color.fromRGBO(255, 181, 51, 1),
       ),
       body: ListView.builder(
         itemCount: messages.length,

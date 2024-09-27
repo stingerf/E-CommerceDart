@@ -18,7 +18,7 @@ class CartBottomNavBar extends StatelessWidget {
                 Text(
                   'Total:',
                   style: TextStyle(
-                    color: Color(0xFF4C53A5),
+                    color: Color.fromRGBO(255, 181, 51, 1),
                     fontSize: 25,
                     fontWeight: FontWeight.bold
                   ),
@@ -27,7 +27,7 @@ class CartBottomNavBar extends StatelessWidget {
                   '\$258',
                   style: TextStyle(
                     fontSize: 25,
-                    color: Color(0xFF4C53A5),
+                    color: Color.fromRGBO(255, 181, 51, 1),
                     fontWeight: FontWeight.bold
                   ),
                 ),
@@ -38,7 +38,7 @@ class CartBottomNavBar extends StatelessWidget {
               height: 50,
               width: double.infinity,
               decoration: BoxDecoration(
-                color:const Color(0xFF4C53A5),
+                color: Color.fromRGBO(255, 181, 51, 1),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Text(

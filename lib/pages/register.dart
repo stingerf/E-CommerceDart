@@ -76,7 +76,7 @@ class RegisterPage extends StatelessWidget {
   Widget _buildRegisterButton(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, '/homepage');
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.pink,
@@ -85,9 +85,9 @@ class RegisterPage extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
       ),
-      child: Text(
+      child: const Text(
         'Register',
-        style: TextStyle(fontSize: 18, color: Colors.white),
+        style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 58, 62, 255)),
       ),
     );
   }

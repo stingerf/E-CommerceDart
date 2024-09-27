@@ -52,7 +52,7 @@ class ItemPage extends StatelessWidget {
                             'Product Title',
                             style: TextStyle(
                               fontSize: 28,
-                              color: Color(0xFF4C53A5),
+                              color: Color.fromRGBO(255, 181, 51, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           )
@@ -77,7 +77,7 @@ class ItemPage extends StatelessWidget {
                                 const EdgeInsets.symmetric(horizontal: 4),
                             itemBuilder: (context, _) => const Icon(
                               Icons.favorite,
-                              color: Color(0xFF4C53A5),
+                              color: Color.fromRGBO(255, 181, 51, 1),
                             ),
                             onRatingUpdate: (index) {},
                           ),
@@ -109,7 +109,7 @@ class ItemPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xFF4C53A5),
+                                    color: Color.fromRGBO(255, 181, 51, 1),
                                   ),
                                 ),
                               ),
@@ -137,14 +137,14 @@ class ItemPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: Text(
                         'This is more detailed description of the product you can write here more about the product, this is lenght description',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           fontSize: 17,
-                          color: Color(0xFF4C53A5),
+                          color: Color.fromRGBO(255, 181, 51, 1),
                         ),
                       ),
                     ),
@@ -156,7 +156,7 @@ class ItemPage extends StatelessWidget {
                             'Size',
                             style: TextStyle(
                               fontSize: 18,
-                              color: Color(0xFF4C53A5),
+                              color: Color.fromRGBO(255, 181, 51, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -187,7 +187,7 @@ class ItemPage extends StatelessWidget {
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color: Color(0xFF4C53A5),
+                                      color: Color.fromRGBO(255, 181, 51, 1),
                                     ),
                                   ),
                                 )
@@ -204,7 +204,7 @@ class ItemPage extends StatelessWidget {
                             'Color',
                             style: TextStyle(
                               fontSize: 18,
-                              color: Color(0xFF4C53A5),
+                              color: Color.fromRGBO(255, 181, 51, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),

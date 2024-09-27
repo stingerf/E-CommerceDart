@@ -5,7 +5,7 @@ class CategoriesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> categories = ['Dasi', 'Sepatu', 'Seragam Lengkap', 'Baju Celana Doank'];
+    final List<String> categories = ['Elekrtonik', 'Mainan', 'Passion', 'Makanan'];
 
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -23,7 +23,7 @@ class CategoriesWidget extends StatelessWidget {
                 children: [
                   // Ganti Image.asset dengan Image.network untuk debugging jika ada masalah dengan gambar lokal
                   Image.asset(
-                    'images/${i + 1}.jpeg', // Pastikan gambar ini ada di folder dan terdaftar di pubspec.yaml
+                    'images/profile/${i + 1}.jpeg', // Pastikan gambar ini ada di folder dan terdaftar di pubspec.yaml
                     width: 40,
                     height: 40,
                   ),
@@ -34,7 +34,7 @@ class CategoriesWidget extends StatelessWidget {
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
-                        color: Color(0xFF4C53A5),
+                         color: Color.fromRGBO(255, 181, 51, 1),
                       ),
                     ),
                   )

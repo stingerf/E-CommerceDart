@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue, Colors.purple],
+            colors: [Color.fromARGB(255, 197, 135, 41), Color.fromARGB(255, 164, 38, 29)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -73,7 +73,7 @@ class LoginPage extends StatelessWidget {
   Widget _buildLoginButton(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.pop(context, '/');
+        Navigator.pop(context, '/homepage');
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.orange,
@@ -84,7 +84,7 @@ class LoginPage extends StatelessWidget {
       ),
       child: Text(
         'Login',
-        style: TextStyle(fontSize: 18, color: Colors.white),
+        style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 58, 62, 255)),
       ),
     );
   }

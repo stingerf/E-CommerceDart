@@ -19,13 +19,13 @@ class CartItemSamples extends StatelessWidget {
           child: Row(
             
             children: [
-              Radio(value: '', groupValue: '', activeColor: const Color(0xFF4C53A5), onChanged: (index) {}
+              Radio(value: '', groupValue: '', activeColor: Color.fromRGBO(255, 181, 51, 1), onChanged: (index) {}
               ),
               Container(
                 height: 70,
                 width: 70,
                 margin: const EdgeInsets.only(right: 15),
-                child: Image.asset('images/$i.jpeg'),
+                child: Image.asset('images/gambar/$i.jpeg'),
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -38,7 +38,7 @@ class CartItemSamples extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF4C53A5),
+                        color: Color.fromRGBO(255, 181, 51, 1),
                       ),
                     ),
                     Text(
@@ -46,7 +46,7 @@ class CartItemSamples extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF4C53A5),
+                        color: Color.fromRGBO(255, 181, 51, 1),
                       ),
                     ),
                   ],
@@ -90,7 +90,7 @@ class CartItemSamples extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF4C53A5),
+                              color: Color.fromRGBO(255, 181, 51, 1),
                             ),
                           ),
                         ),

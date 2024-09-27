@@ -11,7 +11,7 @@ class ProfilePage extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xFF4C53A5),
+        backgroundColor: Color.fromRGBO(255, 181, 51, 1),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.only(top: 8),
@@ -19,26 +19,26 @@ class ProfilePage extends StatelessWidget {
           children: [
             // Bagian header dengan gambar profil dan nama pengguna
             Container(
-              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xFF4C53A5),
+              padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+              decoration: const BoxDecoration(
+                color: Color.fromRGBO(255, 181, 51, 1),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
                 ),
               ),
-              child: Column(
+              child: const Column(
                 children: [
                   CircleAvatar(
                     radius: 60,
-                    backgroundImage: NetworkImage(
-                      'https://i.pravatar.cc/300', // Gambar profil dummy
+                    backgroundImage: AssetImage(
+                      'images/pp/1.jpeg', // Gambar profil dummy
                     ),
                   ),
                   SizedBox(height: 20),
-                  Text(
+                  const Text(
                     "Sumbul R",
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -127,7 +127,7 @@ class ProfilePage extends StatelessWidget {
       child: ListTile(
         leading: Icon(
           icon,
-          color: Color(0xFF4C53A5),
+          color: Color.fromRGBO(255, 181, 51, 1),
         ),
         title: Text(
           label,

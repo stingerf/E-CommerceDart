@@ -30,7 +30,7 @@ class ItemBottomNavBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF4C53A5),
+                 color: Color.fromRGBO(255, 181, 51, 1),
               ),
             ),
             ElevatedButton.icon(

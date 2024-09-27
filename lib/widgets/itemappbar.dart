@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ItemAppBar extends StatelessWidget {
-   ItemAppBar({super.key});
+  ItemAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,12 @@ class ItemAppBar extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-               Navigator.pop(context);
+              Navigator.pop(context);
             },
             child: const Icon(
               Icons.arrow_back,
               size: 30,
-              color: Color(0xFF4C53A5),
+              color: Color.fromRGBO(255, 181, 51, 1),
             ),
           ),
           const Padding(
@@ -25,7 +25,7 @@ class ItemAppBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF4C53A5)
+                color: Color.fromRGBO(255, 181, 51, 1),
               ),
             ),
           ),

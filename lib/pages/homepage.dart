@@ -36,7 +36,7 @@ class _HomepageState extends State<Homepage> {
           });
         },
         height: 70,
-        color: const Color(0xFF4C53A5),
+        color: Color.fromRGBO(255, 181, 51, 1),
         items: const [
           Icon(
             Icons.home,
@@ -101,7 +101,7 @@ class HomepageContent extends StatelessWidget {
                     const Icon(
                       Icons.camera_alt,
                       size: 27,
-                      color: Color(0xFF4C53A5),
+                     color: Color.fromRGBO(255, 181, 51, 1),
                     ),
                   ],
                 ),
@@ -117,7 +117,7 @@ class HomepageContent extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF4C53A5)),
+                     color: Color.fromRGBO(255, 181, 51, 1)),
                 ),
               ),
 
@@ -134,7 +134,7 @@ class HomepageContent extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF4C53A5),
+                   color: Color.fromRGBO(255, 181, 51, 1),
                   ),
                 ),
               ),

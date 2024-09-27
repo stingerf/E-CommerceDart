@@ -4,23 +4,23 @@ class Itemwidget extends StatelessWidget {
   Itemwidget({super.key});
 
   List<String> myProductName = [
-    'Dasi',
-    'Sepatu',
-    'Seragam SMK',
-    'Seragam SMP',
+    'Earphone',
+    'Futuristik',
+    'Headset',
+    'AK-47',
   ];
 
   List<String> myProductDescription = [
-    'Dasi keren',
-    'Sepatu sekolah',
-    'Seragam IDN untuk SMK',
-    'Seragam IDN untuk SMP',
+    'tanpa isi batre',
+    'Perabotan rumah lengkap',
+    'Masak nasi cuma 10 menit',
+    'Magazine = 100+ peluru',
   ];
 
   List<double> myProductPrice = [
-    30.00,
-    60.00,
-    75.00,
+    20.00,
+    160.00,
+    45.00,
     70.00,
   ];
 
@@ -48,7 +48,7 @@ class Itemwidget extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF4C53A5),
+                         color: Color.fromRGBO(255, 181, 51, 1),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: const Text(
@@ -73,7 +73,7 @@ class Itemwidget extends StatelessWidget {
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     child: Image.asset(
-                      'images/${i + 1}.jpeg', // Pastikan gambar tersedia sesuai dengan format
+                      'images/gambar/${i + 1}.jpeg', // Pastikan gambar tersedia sesuai dengan format
                       height: 100,
                       width: 100,
                     ),
@@ -86,7 +86,7 @@ class Itemwidget extends StatelessWidget {
                     myProductName[i], // Nama produk mengikuti list
                     style: const TextStyle(
                       fontSize: 10,
-                      color: Color(0xFF4C53A5),
+                       color: Color.fromRGBO(255, 181, 51, 1),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -97,7 +97,7 @@ class Itemwidget extends StatelessWidget {
                     myProductDescription[i], // Deskripsi produk mengikuti list
                     style: const TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF4C53A5),
+                       color: Color.fromRGBO(154, 151, 145, 1),
                     ),
                   ),
                 ),
@@ -111,13 +111,13 @@ class Itemwidget extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                           color: Color.fromRGBO(186, 186, 186, 1),
                         ),
                       ),
                       const Icon(
                         Icons.shopping_cart_checkout,
                         size: 20,
-                        color: Color(0xFF4C53A5),
+                         color: Color.fromRGBO(255, 181, 51, 1),
                       ),
                     ],
                   ),

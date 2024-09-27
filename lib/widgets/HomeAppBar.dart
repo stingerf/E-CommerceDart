@@ -14,16 +14,16 @@ class HomeAppBar extends StatelessWidget {
            const Icon(
             Icons.sort,
             size: 30,
-            color: Color(0xFF4C53A5),
+             color: Color.fromRGBO(255, 181, 51, 1),
           ),
           const Padding(
         padding: EdgeInsets.only(left:30),
         child: Text(
-          'IDN Logo',
+          'Gloshop',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF4C53A5),
+            color: Color.fromRGBO(255, 181, 51, 1),
           ),
         ),
         ),
@@ -44,7 +44,7 @@ class HomeAppBar extends StatelessWidget {
             child: const Icon(
             Icons.chat,
             size: 30,
-            color: Color(0xFF4C53A5),
+             color: Color.fromRGBO(255, 181, 51, 1),
           ),
           )
           

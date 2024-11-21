@@ -48,7 +48,7 @@ class Itemwidget extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                         color: Color.fromRGBO(255, 181, 51, 1),
+                         color: const Color.fromRGBO(255, 181, 51, 1),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: const Text(

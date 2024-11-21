@@ -60,7 +60,7 @@ class ChatPage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(255, 181, 51, 1),
+        backgroundColor: const Color.fromRGBO(255, 181, 51, 1),
       ),
       body: ListView.builder(
         itemCount: messages.length,

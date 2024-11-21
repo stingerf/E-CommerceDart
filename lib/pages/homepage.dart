@@ -36,7 +36,7 @@ class _HomepageState extends State<Homepage> {
           });
         },
         height: 70,
-        color: Color.fromRGBO(255, 181, 51, 1),
+        color: const Color.fromRGBO(255, 181, 51, 1),
         items: const [
           Icon(
             Icons.home,
@@ -60,6 +60,8 @@ class _HomepageState extends State<Homepage> {
 }
 
 class HomepageContent extends StatelessWidget {
+  const HomepageContent({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -122,7 +124,7 @@ class HomepageContent extends StatelessWidget {
               ),
 
               // Widget Categories
-              CategoriesWidget(),
+              const CategoriesWidget(),
 
               // Widget Items
               Container(

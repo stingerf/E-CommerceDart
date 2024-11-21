@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:skl_e_commerse/pages/login.dart';
 
 class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Profile",
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(255, 181, 51, 1),
+        backgroundColor: const Color.fromRGBO(255, 181, 51, 1),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 8),
+        padding: const EdgeInsets.only(top: 8),
         child: Column(
           children: [
             // Bagian header dengan gambar profil dan nama pengguna
@@ -36,9 +38,9 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  const Text(
+                  Text(
                     "Sumbul R",
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -55,7 +57,7 @@ class ProfilePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             // Tombol aksi seperti Edit Profil, Pengaturan, dll.
             Padding(
@@ -120,20 +122,20 @@ class ProfilePage extends StatelessWidget {
     required VoidCallback onTap,
   }) {
     return Card(
-      margin: EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),
       child: ListTile(
         leading: Icon(
           icon,
-          color: Color.fromRGBO(255, 181, 51, 1),
+          color: const Color.fromRGBO(255, 181, 51, 1),
         ),
         title: Text(
           label,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
         ),
-        trailing: Icon(Icons.arrow_forward_ios, size: 18),
+        trailing: const Icon(Icons.arrow_forward_ios, size: 18),
         onTap: onTap,
       ),
     );

@@ -28,18 +28,18 @@ class LoginPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 _buildTextField('Email', Icons.email),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 _buildTextField('Password', Icons.lock, isPassword: true),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 _buildLoginButton(context),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/register');
                   },
-                  child: Text(
+                  child: const Text(
                     'Belum punya akun? Register',
                     style: TextStyle(color: Colors.white),
                   ),
@@ -55,11 +55,11 @@ class LoginPage extends StatelessWidget {
   Widget _buildTextField(String hint, IconData icon, {bool isPassword = false}) {
     return TextField(
       obscureText: isPassword,
-      style: TextStyle(color: Colors.white),
+      style: const TextStyle(color: Colors.white),
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: Colors.white),
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.white70),
+        hintStyle: const TextStyle(color: Colors.white70),
         filled: true,
         fillColor: Colors.white.withOpacity(0.2),
         border: OutlineInputBorder(
@@ -77,12 +77,12 @@ class LoginPage extends StatelessWidget {
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.orange,
-        padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 15),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
       ),
-      child: Text(
+      child: const Text(
         'Login',
         style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 58, 62, 255)),
       ),

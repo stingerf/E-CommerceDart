@@ -19,7 +19,7 @@ class CartItemSamples extends StatelessWidget {
           child: Row(
             
             children: [
-              Radio(value: '', groupValue: '', activeColor: Color.fromRGBO(255, 181, 51, 1), onChanged: (index) {}
+              Radio(value: '', groupValue: '', activeColor: const Color.fromRGBO(255, 181, 51, 1), onChanged: (index) {}
               ),
               Container(
                 height: 70,

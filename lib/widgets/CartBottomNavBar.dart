@@ -38,7 +38,7 @@ class CartBottomNavBar extends StatelessWidget {
               height: 50,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(255, 181, 51, 1),
+                color: const Color.fromRGBO(255, 181, 51, 1),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Text(

@@ -11,7 +11,7 @@ class SubChat extends StatelessWidget {
     {"text": "because you need", "isSentByMe": true},
   ];
 
-  SubChat({required this.name});
+  SubChat({super.key, required this.name});
 
   // Method untuk menambahkan pesan baru
   void _sendMessage(BuildContext context) {
@@ -31,7 +31,7 @@ class SubChat extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             onPressed: () {},
           )
         ],
@@ -40,7 +40,7 @@ class SubChat extends StatelessWidget {
         children: [
           Expanded(
             child: ListView.builder(
-              padding: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
               itemCount: messages.length,
               itemBuilder: (context, index) {
                 final message = messages[index];
@@ -48,8 +48,8 @@ class SubChat extends StatelessWidget {
                 return Align(
                   alignment: isSentByMe ? Alignment.centerRight : Alignment.centerLeft,
                   child: Container(
-                    margin: EdgeInsets.symmetric(vertical: 5.0),
-                    padding: EdgeInsets.all(15.0),
+                    margin: const EdgeInsets.symmetric(vertical: 5.0),
+                    padding: const EdgeInsets.all(15.0),
                     constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.7),
                     decoration: BoxDecoration(
                       color: isSentByMe ? Colors.orange[300] : Colors.grey[200],
@@ -69,7 +69,7 @@ class SubChat extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                  icon: Icon(Icons.camera_alt),
+                  icon: const Icon(Icons.camera_alt),
                   onPressed: () {},
                 ),
                 Expanded(
@@ -87,7 +87,7 @@ class SubChat extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(Icons.send),
+                  icon: const Icon(Icons.send),
                   onPressed: () {
                     _sendMessage(context);
                   },

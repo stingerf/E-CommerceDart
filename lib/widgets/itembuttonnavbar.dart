@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
 
 class ItemBottomNavBar extends StatelessWidget {
-  ItemBottomNavBar({super.key});
+  const ItemBottomNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
         height: 70,
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),

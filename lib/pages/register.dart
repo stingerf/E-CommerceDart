@@ -8,7 +8,7 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.orange, Colors.red],
             begin: Alignment.topLeft,
@@ -21,7 +21,7 @@ class RegisterPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Register',
                   style: TextStyle(
                     fontSize: 36,
@@ -29,20 +29,20 @@ class RegisterPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 _buildTextField('Nama', Icons.person),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 _buildTextField('Email', Icons.email),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 _buildTextField('Password', Icons.lock, isPassword: true),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 _buildRegisterButton(context),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/homepage');
                   },
-                  child: Text(
+                  child: const Text(
                     'Sudah punya akun? Login',
                     style: TextStyle(color: Colors.white),
                   ),
@@ -58,11 +58,11 @@ class RegisterPage extends StatelessWidget {
   Widget _buildTextField(String hint, IconData icon, {bool isPassword = false}) {
     return TextField(
       obscureText: isPassword,
-      style: TextStyle(color: Colors.white),
+      style: const TextStyle(color: Colors.white),
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: Colors.white),
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.white70),
+        hintStyle: const TextStyle(color: Colors.white70),
         filled: true,
         fillColor: Colors.white.withOpacity(0.2),
         border: OutlineInputBorder(
@@ -80,7 +80,7 @@ class RegisterPage extends StatelessWidget {
       },
       style: ElevatedButton.styleFrom(
         iconColor: Colors.pink,
-        padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 15),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),

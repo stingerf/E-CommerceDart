@@ -25,7 +25,7 @@ class MainApp extends StatelessWidget {
         "/homepage": (context) => const Homepage(),
         "/itemappbar": (context) => ItemPage(),
         "/cartpage": (context) => const CartPage(),
-        "/login": (context) =>  LoginPage(),
+        "/login": (context) =>  const LoginPage(),
         "/register": (context) => const RegisterPage(),
         "/chatpage": (context) => ChatPage(),
         "/subchatpage": (context) => SubChat(name: '',),
